@@ -4,81 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lojinha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <h1>Astro Imports</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Imagem</th>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Qtd</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> 
-                    <img src="img/camisa_1.jpg" alt="">
-                </td>
-                <td>
-                    <div>Camisa Corinthians n° III - 2022</div>
-                    <div>Cor: Preta</div>
-                    <div>Tamanho: M</div>
-                </td>
-                <td>R$ 189,90</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <img src="img/camisa_2.jpg" alt="">
-                </td>
-                <td>
-                    <div>Camisa Vasco Home - 2022</div>
-                    <div>Cor: Preta</div>
-                    <div>Tamanho: G</div>
-                </td>
-                <td>R$ 189,90</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <img src="img/camisa_3.jpg" alt="">
-                </td>
-                <td>
-                    <div>Camisa Flamengo n° I - 2023 </div>
-                    <div>Cor: Preta/Vermelha</div>
-                    <div>Tamanho: M</div>
-                </td>
-                <td>R$ 189,90</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            <tr>
-                <td> 
-                    <img src="img/camisa_4.jpg" alt="">
-                </td>
-                <td>
-                    <div>Camisa Corinthians n° III - 2025</div>
-                    <div>Cor: Preta/Laranja</div>
-                    <div>Tamanho: M</div>
-                </td>
-                <td>R$ 189,90</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-        </tbody>
-    </table>
-    <footer>
-        <span>
-            Subtotal: R$ 0,00
-        </span>
-    </footer>
+    <div class="container">
+        <h1>Astro Imports</h1>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Qtd</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/camisa_1.jpg" alt="">
+                    </td>
+                    <td>
+                        <div>Camisa Corinthians n° III - 2022</div>
+                        <div>Cor: Preta</div>
+                        <div>Tamanho: M</div>
+                    </td>
+                    <td>R$ 189,90</td>
+                    <td>
+                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/camisa_2.jpg" alt="">
+                    </td>
+                    <td>
+                        <div>Camisa Vasco Home - 2022</div>
+                        <div>Cor: Preta</div>
+                        <div>Tamanho: G</div>
+                    </td>
+                    <td>R$ 189,90</td>
+                    <td>
+                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/camisa_3.jpg" alt="">
+                    </td>
+                    <td>
+                        <div>Camisa Flamengo n° I - 2023 </div>
+                        <div>Cor: Preta/Vermelha</div>
+                        <div>Tamanho: M</div>
+                    </td>
+                    <td>R$ 189,90</td>
+                    <td>
+                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/camisa_4.jpg" alt="">
+                    </td>
+                    <td>
+                        <div>Camisa Corinthians n° III - 2025</div>
+                        <div>Cor: Preta/Laranja</div>
+                        <div>Tamanho: M</div>
+                    </td>
+                    <td>R$ 189,90</td>
+                    <td>
+                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="text-center">
+            <span>
+              <i class="bi bi-cart"></i>  Subtotal: R$ 0,00
+            </span>
+        </footer>
+    </div>
 </body>
 </html>
