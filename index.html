@@ -6,10 +6,15 @@
     <title>Lojinha</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcoes.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Astro Imports</h1>
+        <section class="header">
+            <h1>Astro Imports</h1>
+                <p>Seu melhor estilo é aqui!</p>
+        </section>
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -30,13 +35,13 @@
                         <div>Cor: Preta</div>
                         <div>Tamanho: M</div>
                     </td>
-                    <td>R$ 189,90</td>
+                    <td id="valor_1"> 189.90</td>
                     <td>
                         <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
-                        0
-                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                        <span id="qtd_1">0</span>
+                        <span class="badge bg-success" onclick="adicionar(1)"><i class="bi bi-plus"></i></span>
                     </td>
-                    <td>0</td>
+                    <td id="total_1">0</td>
                 </tr>
                 <tr>
                     <td>
@@ -47,13 +52,13 @@
                         <div>Cor: Preta</div>
                         <div>Tamanho: G</div>
                     </td>
-                    <td>R$ 189,90</td>
+                    <td id="valor_2">R$ 149.90</td>
                     <td>
                         <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
-                        0
-                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                        <span id="qtd_2">0</span>
+                        <span class="badge bg-success" onclick="adicionar(2)"><i class="bi bi-plus"></i></span>
                     </td>
-                    <td>0</td>
+                    <td id="total_2">0</td>
                 </tr>
                 <tr>
                     <td>
@@ -64,30 +69,30 @@
                         <div>Cor: Preta/Vermelha</div>
                         <div>Tamanho: M</div>
                     </td>
-                    <td>R$ 189,90</td>
+                    <td id="valor_3">R$ 189.90</td>
                     <td>
                         <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
-                        0
-                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                        <span id="qtd_3">0</span>
+                        <span class="badge bg-success" onclick="adicionar(3)"><i class="bi bi-plus"></i></span>
                     </td>
-                    <td>0</td>
+                    <td id="total_3">0</td>
                 </tr>
                 <tr>
                     <td>
                         <img src="img/camisa_4.jpg" alt="">
                     </td>
                     <td>
-                        <div>Camisa Corinthians n° III - 2025</div>
+                        <div>Camisa Corinthians n° III - 2025 </div>
                         <div>Cor: Preta/Laranja</div>
                         <div>Tamanho: M</div>
                     </td>
-                    <td>R$ 189,90</td>
+                    <td id="valor_4">R$ 229,90</td>
                     <td>
                         <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
-                        0
-                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                        <span id="qtd_4">0</span>
+                        <span class="badge bg-success" onclick="adicionar(4)"><i class="bi bi-plus"></i></span>
                     </td>
-                    <td>0</td>
+                    <td id="total_4">0</td>
                 </tr>
             </tbody>
         </table>

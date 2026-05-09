@@ -1,0 +1,16 @@
+.header, footer{
+    text-align: center;
+    padding: 10px;
+    background-color: khaki;
+    border-radius: 5px;
+}
+
+.header > p , footer{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+tbody > tr > td {
+    font-weight: bold;
+}
+
