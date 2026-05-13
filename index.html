@@ -35,11 +35,11 @@
                         <div>Cor: Preta</div>
                         <div>Tamanho: M</div>
                     </td>
-                    <td id="valor_1"> 189.90</td>
+                    <td id="valor_1">189.90</td>
                     <td>
-                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        <span class="badge bg-danger" onclick="alterarQtd(1, '-')"><i class="bi bi-dash"></i></span>
                         <span id="qtd_1">0</span>
-                        <span class="badge bg-success" onclick="adicionar(1)"><i class="bi bi-plus"></i></span>
+                        <span class="badge bg-success" onclick="alterarQtd(1, '+')"><i class="bi bi-plus"></i></span>
                     </td>
                     <td id="total_1">0</td>
                 </tr>
@@ -47,16 +47,16 @@
                     <td>
                         <img src="img/camisa_2.jpg" alt="">
                     </td>
-                    <td>
+                    <td class="td_alinhamento">
                         <div>Camisa Vasco Home - 2022</div>
                         <div>Cor: Preta</div>
                         <div>Tamanho: G</div>
                     </td>
-                    <td id="valor_2">R$ 149.90</td>
+                    <td id="valor_2">149.90</td>
                     <td>
-                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        <span class="badge bg-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></span>
                         <span id="qtd_2">0</span>
-                        <span class="badge bg-success" onclick="adicionar(2)"><i class="bi bi-plus"></i></span>
+                        <span class="badge bg-success" onclick="alterarQtd(2, '+')"><i class="bi bi-plus"></i></span>
                     </td>
                     <td id="total_2">0</td>
                 </tr>
@@ -69,36 +69,19 @@
                         <div>Cor: Preta/Vermelha</div>
                         <div>Tamanho: M</div>
                     </td>
-                    <td id="valor_3">R$ 189.90</td>
+                    <td id="valor_3">189.90</td>
                     <td>
-                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        <span class="badge bg-danger" onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></span>
                         <span id="qtd_3">0</span>
-                        <span class="badge bg-success" onclick="adicionar(3)"><i class="bi bi-plus"></i></span>
+                        <span class="badge bg-success" onclick="alterarQtd(3, '+')"><i class="bi bi-plus"></i></span>
                     </td>
                     <td id="total_3">0</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="img/camisa_4.jpg" alt="">
-                    </td>
-                    <td>
-                        <div>Camisa Corinthians n° III - 2025 </div>
-                        <div>Cor: Preta/Laranja</div>
-                        <div>Tamanho: M</div>
-                    </td>
-                    <td id="valor_4">R$ 229,90</td>
-                    <td>
-                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
-                        <span id="qtd_4">0</span>
-                        <span class="badge bg-success" onclick="adicionar(4)"><i class="bi bi-plus"></i></span>
-                    </td>
-                    <td id="total_4">0</td>
                 </tr>
             </tbody>
         </table>
         <footer class="text-center">
             <span>
-              <i class="bi bi-cart"></i>  Subtotal: R$ 0,00
+              <i class="bi bi-cart"></i>  Subtotal: R$ <span id="subtotal"> 0 </span>
             </span>
         </footer>
     </div>
